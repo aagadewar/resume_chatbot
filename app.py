@@ -17,7 +17,7 @@ from langchain_classic.chains import RetrievalQA
 load_dotenv()
 
 working_dir = os.path.dirname(os.path.abspath((__file__)))
-print(f"working_dir: {working_dir}")
+
 # Load the embedding model
 embedding = HuggingFaceEmbeddings()
 
@@ -73,7 +73,7 @@ def answer_question(user_question):
 # set the working directory
 working_dir = os.path.dirname(os.path.abspath((__file__)))
 
-st.title("🦙 Llama-3.3-70B - Document RAG")
+st.title("Resume RAG - 🦙 Llama-3.3-70B")
 
 # file uploader widget
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
@@ -95,5 +95,5 @@ if st.button("Answer"):
 
     answer = answer_question(user_question)
 
-    st.markdown("### Llama-3.3-70B Response")
+    st.markdown("Response:")
     st.markdown(answer)
