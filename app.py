@@ -17,7 +17,7 @@ from langchain_classic.chains import RetrievalQA
 load_dotenv()
 
 working_dir = os.path.dirname(os.path.abspath((__file__)))
-
+print(f"working_dir: {working_dir}")
 # Load the embedding model
 embedding = HuggingFaceEmbeddings()
 
