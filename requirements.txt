@@ -13,4 +13,4 @@ langchain-groq
 langchain-classic
 
 protobuf==3.20.3
-opencv-python-headless
+opencv-python-headless==4.10.0.84
